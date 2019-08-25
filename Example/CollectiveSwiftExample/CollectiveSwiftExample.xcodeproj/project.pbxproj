@@ -3,18 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2050404B231322EF00495DCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050404A231322EF00495DCB /* AppDelegate.swift */; };
 		2050404D231322EF00495DCB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050404C231322EF00495DCB /* SceneDelegate.swift */; };
-		2050404F231322EF00495DCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050404E231322EF00495DCB /* ViewController.swift */; };
+		2050404F231322EF00495DCB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050404E231322EF00495DCB /* MainViewController.swift */; };
 		20504052231322EF00495DCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20504050231322EF00495DCB /* Main.storyboard */; };
 		20504054231322F100495DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20504053231322F100495DCB /* Assets.xcassets */; };
 		20504057231322F100495DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20504055231322F100495DCB /* LaunchScreen.storyboard */; };
 		20504062231322F100495DCB /* CollectiveSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20504061231322F100495DCB /* CollectiveSwiftExampleTests.swift */; };
 		2050406D231322F100495DCB /* CollectiveSwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050406C231322F100495DCB /* CollectiveSwiftExampleUITests.swift */; };
+		2050407C2313295400495DCB /* CollectiveSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2050407B2313295400495DCB /* CollectiveSwift */; };
+		2050407E2313344700495DCB /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2050407D2313344700495DCB /* Math.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		20504047231322EF00495DCB /* CollectiveSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectiveSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2050404A231322EF00495DCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2050404C231322EF00495DCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2050404E231322EF00495DCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2050404E231322EF00495DCB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		20504051231322EF00495DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20504053231322F100495DCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20504056231322F100495DCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		20504068231322F100495DCB /* CollectiveSwiftExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectiveSwiftExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2050406C231322F100495DCB /* CollectiveSwiftExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectiveSwiftExampleUITests.swift; sourceTree = "<group>"; };
 		2050406E231322F100495DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2050407D2313344700495DCB /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2050407C2313295400495DCB /* CollectiveSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,11 +105,12 @@
 			children = (
 				2050404A231322EF00495DCB /* AppDelegate.swift */,
 				2050404C231322EF00495DCB /* SceneDelegate.swift */,
-				2050404E231322EF00495DCB /* ViewController.swift */,
 				20504050231322EF00495DCB /* Main.storyboard */,
+				2050404E231322EF00495DCB /* MainViewController.swift */,
+				2050407D2313344700495DCB /* Math.swift */,
 				20504053231322F100495DCB /* Assets.xcassets */,
-				20504055231322F100495DCB /* LaunchScreen.storyboard */,
 				20504058231322F100495DCB /* Info.plist */,
+				20504055231322F100495DCB /* LaunchScreen.storyboard */,
 			);
 			path = CollectiveSwiftExample;
 			sourceTree = "<group>";
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = CollectiveSwiftExample;
+			packageProductDependencies = (
+				2050407B2313295400495DCB /* CollectiveSwift */,
+			);
 			productName = CollectiveSwiftExample;
 			productReference = 20504047231322EF00495DCB /* CollectiveSwiftExample.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +224,9 @@
 				Base,
 			);
 			mainGroup = 2050403E231322EF00495DCB;
+			packageReferences = (
+				2050407A2313295400495DCB /* XCRemoteSwiftPackageReference "CollectiveSwift" */,
+			);
 			productRefGroup = 20504048231322EF00495DCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2050404F231322EF00495DCB /* ViewController.swift in Sources */,
+				2050404F231322EF00495DCB /* MainViewController.swift in Sources */,
 				2050404B231322EF00495DCB /* AppDelegate.swift in Sources */,
 				2050404D231322EF00495DCB /* SceneDelegate.swift in Sources */,
+				2050407E2313344700495DCB /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2050407A2313295400495DCB /* XCRemoteSwiftPackageReference "CollectiveSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gpape/CollectiveSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2050407B2313295400495DCB /* CollectiveSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2050407A2313295400495DCB /* XCRemoteSwiftPackageReference "CollectiveSwift" */;
+			productName = CollectiveSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2050403F231322EF00495DCB /* Project object */;
 }

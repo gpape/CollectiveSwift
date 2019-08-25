@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CollectiveSwift",
+        "repositoryURL": "https://github.com/gpape/CollectiveSwift.git",
+        "state": {
+          "branch": "master",
+          "revision": "ef3bd1b32c79ab46a16721622a140c5c187dffdd",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
