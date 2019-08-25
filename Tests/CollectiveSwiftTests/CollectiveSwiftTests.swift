@@ -2,14 +2,17 @@ import XCTest
 @testable import CollectiveSwift
 
 final class CollectiveSwiftTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(CollectiveSwift().text, "Hello, World!")
-    }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testCollectiveSetter", testCollectiveSetter),
     ]
+
+    func testCollectiveSetter() {
+        let wrappers: [Wrapper<Int>] = [Wrapper(0), Wrapper(0), Wrapper(0)]
+        wrappers.all.value = 42
+        for wrapper in wrappers {
+            XCTAssertEqual(wrapper.value, 42)
+        }
+    }
+
 }
