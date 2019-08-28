@@ -243,9 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20504057231322F100495DCB /* LaunchScreen.storyboard in Resources */,
-				20504054231322F100495DCB /* Assets.xcassets in Resources */,
 				20504052231322EF00495DCB /* Main.storyboard in Resources */,
+				20504054231322F100495DCB /* Assets.xcassets in Resources */,
+				20504057231322F100495DCB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2050404F231322EF00495DCB /* MainViewController.swift in Sources */,
 				2050404B231322EF00495DCB /* AppDelegate.swift in Sources */,
 				2050404D231322EF00495DCB /* SceneDelegate.swift in Sources */,
+				2050404F231322EF00495DCB /* MainViewController.swift in Sources */,
 				2050407E2313344700495DCB /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
