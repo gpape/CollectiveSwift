@@ -11,31 +11,19 @@ import UIKit
 
 final class MainViewController: UIViewController {
 
-// MARK: - Interface
-
     @IBOutlet private var effectViews: [UIView]!
+    @IBOutlet private var labels: [UILabel]!
     @IBOutlet private weak var slider: UISlider!
-
-}
-
-// MARK: - : UIViewController
-
-extension MainViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderValueChanged(slider)
     }
 
-}
-
-// MARK: - Actions
-
-private extension MainViewController {
-
-    @IBAction func sliderValueChanged(_ slider: UISlider) {
-        effectViews.all.backgroundColor = UIColor.blue.lerp(t: slider.value, to: .red)
-        effectViews.all.transform = CGAffineTransform(rotationAngle: CGFloat(0).lerp(slider.value, to: .pi / 2))
+    @IBAction private func sliderValueChanged(_ slider: UISlider) {
+        effectViews.all.backgroundColor = .lerp(slider.value, from: .blue, to: .red)
+        effectViews.all.transform = CGAffineTransform(rotationAngle: .lerp(slider.value, from: 0, to: .pi / 2))
+        labels.all.text = String(slider.value)
     }
 
 }

@@ -21,10 +21,10 @@
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="NWg-hQ-ssF"/>
                                 </connections>
                             </slider>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="10h-7C-acr">
-                                <rect key="frame" x="32" y="94" width="100" height="208"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="10h-7C-acr" userLabel="Effect Views Stack">
+                                <rect key="frame" x="32" y="94" width="100" height="316"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-Yh-7hS" userLabel="View 1">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-Yh-7hS" userLabel="Effect View 1">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="height" constant="100" id="G04-Lq-QW3"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m72-Lx-oS7" userLabel="View 2">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m72-Lx-oS7" userLabel="Effect View 2">
                                         <rect key="frame" x="0.0" y="108" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -40,19 +40,107 @@
                                             <constraint firstAttribute="height" constant="100" id="qqt-kB-0zg"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="es0-Vb-Hrz" userLabel="Effect View 3">
+                                        <rect key="frame" x="0.0" y="216" width="100" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="01a-Bj-2Z6"/>
+                                            <constraint firstAttribute="width" constant="100" id="k0X-Sl-cyg"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="UZ6-m2-UDw"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eRH-Wh-1FO" userLabel="Labels Stack">
+                                <rect key="frame" x="164" y="94" width="179" height="246"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml7-So-wro" userLabel="Label 1">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cul-5e-A4R" userLabel="Label 2">
+                                        <rect key="frame" x="0.0" y="20.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIN-3v-HED" userLabel="Label 3">
+                                        <rect key="frame" x="0.0" y="41" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOW-Jk-Rn7" userLabel="Label 4">
+                                        <rect key="frame" x="0.0" y="61.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qow-um-eqi" userLabel="Label 5">
+                                        <rect key="frame" x="0.0" y="82" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0G-pW-6ro" userLabel="Label 6">
+                                        <rect key="frame" x="0.0" y="102.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHF-Gn-AU2" userLabel="Label 7">
+                                        <rect key="frame" x="0.0" y="123" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtu-cg-9hd" userLabel="Label 8">
+                                        <rect key="frame" x="0.0" y="143.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqK-u8-dHX" userLabel="Label 9">
+                                        <rect key="frame" x="0.0" y="164" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fb-QK-zgs" userLabel="Label 10">
+                                        <rect key="frame" x="0.0" y="184.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-BA-X5v" userLabel="Label 11">
+                                        <rect key="frame" x="0.0" y="205" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3H-QB-Pel" userLabel="Label 12">
+                                        <rect key="frame" x="0.0" y="225.5" width="179" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eRH-Wh-1FO" firstAttribute="leading" secondItem="10h-7C-acr" secondAttribute="trailing" constant="32" id="7Qy-NL-xm9"/>
                             <constraint firstItem="10h-7C-acr" firstAttribute="top" secondItem="BaP-D8-gIC" secondAttribute="bottom" constant="32" id="IDK-Ro-GFQ"/>
                             <constraint firstItem="10h-7C-acr" firstAttribute="leading" secondItem="BaP-D8-gIC" secondAttribute="leading" id="K9A-ce-6nI"/>
+                            <constraint firstItem="eRH-Wh-1FO" firstAttribute="top" secondItem="10h-7C-acr" secondAttribute="top" id="KdD-vE-dYJ"/>
                             <constraint firstItem="BaP-D8-gIC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="UBG-ip-lgO"/>
                             <constraint firstItem="BaP-D8-gIC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-32" id="fZG-KL-kMf"/>
                             <constraint firstItem="BaP-D8-gIC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="ulV-Up-hjb"/>
+                            <constraint firstItem="eRH-Wh-1FO" firstAttribute="trailing" secondItem="BaP-D8-gIC" secondAttribute="trailing" id="zrB-R8-Nvi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -60,6 +148,19 @@
                         <outlet property="slider" destination="BaP-D8-gIC" id="B8Y-n1-ggD"/>
                         <outletCollection property="effectViews" destination="cfl-Yh-7hS" collectionClass="NSMutableArray" id="I2N-2G-8g4"/>
                         <outletCollection property="effectViews" destination="m72-Lx-oS7" collectionClass="NSMutableArray" id="8jC-yB-D20"/>
+                        <outletCollection property="effectViews" destination="es0-Vb-Hrz" collectionClass="NSMutableArray" id="qkA-QY-Tl2"/>
+                        <outletCollection property="labels" destination="ml7-So-wro" collectionClass="NSMutableArray" id="mgZ-Dq-051"/>
+                        <outletCollection property="labels" destination="Cul-5e-A4R" collectionClass="NSMutableArray" id="WLZ-QG-TMA"/>
+                        <outletCollection property="labels" destination="IIN-3v-HED" collectionClass="NSMutableArray" id="TwA-mG-oW7"/>
+                        <outletCollection property="labels" destination="gOW-Jk-Rn7" collectionClass="NSMutableArray" id="t7s-3B-1af"/>
+                        <outletCollection property="labels" destination="qow-um-eqi" collectionClass="NSMutableArray" id="5te-at-NQ8"/>
+                        <outletCollection property="labels" destination="Q0G-pW-6ro" collectionClass="NSMutableArray" id="mjW-Ih-r1c"/>
+                        <outletCollection property="labels" destination="PHF-Gn-AU2" collectionClass="NSMutableArray" id="ojy-jd-CIZ"/>
+                        <outletCollection property="labels" destination="gtu-cg-9hd" collectionClass="NSMutableArray" id="w3s-kk-TwT"/>
+                        <outletCollection property="labels" destination="CqK-u8-dHX" collectionClass="NSMutableArray" id="RpI-UF-gYV"/>
+                        <outletCollection property="labels" destination="9Fb-QK-zgs" collectionClass="NSMutableArray" id="6oS-dF-wNg"/>
+                        <outletCollection property="labels" destination="eyG-BA-X5v" collectionClass="NSMutableArray" id="uJ7-oJ-F3R"/>
+                        <outletCollection property="labels" destination="q3H-QB-Pel" collectionClass="NSMutableArray" id="hZd-kv-GPv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
