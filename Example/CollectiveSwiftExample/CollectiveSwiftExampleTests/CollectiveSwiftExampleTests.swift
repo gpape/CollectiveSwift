@@ -1,9 +1,5 @@
 //
 //  CollectiveSwiftExampleTests.swift
-//  CollectiveSwiftExampleTests
-//
-//  Created by Greg Pape on 8/25/19.
-//  Copyright © 2019 Greg Pape. All rights reserved.
 //
 
 import XCTest
