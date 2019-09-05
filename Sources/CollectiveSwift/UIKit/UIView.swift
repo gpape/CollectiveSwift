@@ -51,10 +51,4 @@ extension Collective where Element: UIView {
         set { base.forEach { $0.transform = newValue } }
     }
 
-    @available(iOS 12.0, *)
-    public var transform3D: CATransform3D {
-        get { Collective.gettersAreNotSupportedFailure() }
-        set { base.forEach { $0.transform3D = newValue } }
-    }
-
 }
