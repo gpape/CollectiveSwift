@@ -22,7 +22,12 @@
 //  THE SOFTWARE.
 //
 
-public class Collective<Element> {
+public protocol CollectiveType {
+    associatedtype Element
+    var base: Array<Element> { get }
+}
+
+public class Collective<Element>: CollectiveType {
 
     public let base: Array<Element>
 
