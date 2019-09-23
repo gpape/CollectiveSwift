@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "CollectiveSwift"
-  spec.version = "2.0.1"
+  spec.version = "2.1.0"
   spec.summary = "A small quality-of-life enhancement for collections in Swift/UIKit."
   spec.description = <<-DESC
 CollectiveSwift enables a concise syntax for setting properties on collections

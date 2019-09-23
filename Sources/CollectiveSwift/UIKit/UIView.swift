@@ -36,9 +36,19 @@ extension Collective where Element: UIView {
         set { base.forEach { $0.backgroundColor = newValue } }
     }
 
+    public var borderColor: UIColor? {
+        get { Collective.gettersAreNotSupportedFailure() }
+        set { base.forEach { $0.layer.borderColor = newValue?.cgColor } }
+    }
+
     public var isHidden: Bool {
         get { Collective.gettersAreNotSupportedFailure() }
         set { base.forEach { $0.isHidden = newValue } }
+    }
+
+    public var isUserInteractionEnabled: Bool {
+        get { Collective.gettersAreNotSupportedFailure() }
+        set { base.forEach { $0.isUserInteractionEnabled = newValue } }
     }
 
     public var tintColor: UIColor {
